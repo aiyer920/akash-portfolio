@@ -6,7 +6,8 @@ baseurl: "/akash-portfolio"
 author: "Akash Iyer"
 email: "akashiyer2022@gmail.com"
 github_username: "aiyer920"
-linkedin_username: "https://www.linkedin.com/in/akash-iyer/"
+linkedin_username: "akash-iyer"
+twitter_username: "your-twitter"
 
 # Build settings
 markdown: kramdown
@@ -64,15 +65,15 @@ project_categories:
   - name: "Mechatronics"
     slug: "mechatronics"
     description: "Integration of mechanical, electrical, and software systems"
-  - name: "Arduino"
-    slug: "arduino"
-    description: "Arduino-based projects and prototypes"
-  - name: "3D Printing"
-    slug: "3d-printing"
-    description: "Custom 3D printed components and designs"
-  - name: "IoT"
-    slug: "iot"
-    description: "Internet of Things devices and applications"
+  - name: "Machine Learning"
+    slug: "machine-learning"
+    description: "Projects and research in machine learning and AI"
+  - name: "Design and Manufacturing"
+    slug: "design-and-manufacturing"
+    description: "Custom manufactured components and designs"
+  - name: "Perception"
+    slug: "perception"
+    description: "Sensor data processing and computer vision"
 
 # 3D Model settings
 models:
