@@ -64,7 +64,7 @@ permalink: /about/
 
         <section class="about-section">
             <h2>Experience</h2>
-            <div class="features-list">
+            <div class="features-list" id="experience-grid">
                 <div class="feature-item">
                     <h3><i class="fas fa-briefcase"></i> Mechanical Systems and Project Engineering Intern</h3>
                     <p class="feature-meta">Boeing · Ridley Park, PA · May–August 2025 and May–August 2026</p>
@@ -94,7 +94,7 @@ permalink: /about/
                     </ul>
                 </div>
 
-                <div class="feature-item">
+                <div class="feature-item experience-extra is-hidden">
                     <h3><i class="fas fa-cogs"></i> Applications Engineering Intern</h3>
                     <p class="feature-meta">Henkel · Bridgewater, NJ · June–August 2024</p>
                     <ul class="feature-details">
@@ -103,7 +103,7 @@ permalink: /about/
                     </ul>
                 </div>
 
-                <div class="feature-item">
+                <div class="feature-item experience-extra is-hidden">
                     <h3><i class="fas fa-solar-panel"></i> Engineering Intern</h3>
                     <p class="feature-meta">Gaia Energy Research Institute · Alexandria, VA · August 2023–June 2024</p>
                     <ul class="feature-details">
@@ -112,64 +112,35 @@ permalink: /about/
                     </ul>
                 </div>
             </div>
-        </section>
 
-        <section class="about-section">
-            <h2>Built With</h2>
-            <div class="tech-stack">
-                <div class="tech-item">
-                    <i class="fab fa-html5"></i>
-                    <span>HTML5</span>
-                </div>
-                <div class="tech-item">
-                    <i class="fab fa-css3-alt"></i>
-                    <span>CSS3/SCSS</span>
-                </div>
-                <div class="tech-item">
-                    <i class="fab fa-js-square"></i>
-                    <span>JavaScript</span>
-                </div>
-                <div class="tech-item">
-                    <i class="fas fa-gem"></i>
-                    <span>Jekyll</span>
-                </div>
-                <div class="tech-item">
-                    <i class="fas fa-cube"></i>
-                    <span>Three.js</span>
-                </div>
-                <div class="tech-item">
-                    <i class="fab fa-github"></i>
-                    <span>GitHub Pages</span>
-                </div>
+            <div class="experience-toggle-wrap">
+                <button
+                    id="experience-toggle"
+                    class="btn-secondary experience-toggle"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="experience-grid"
+                >
+                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    <span>Show More</span>
+                </button>
             </div>
         </section>
 
         <section class="about-section">
-            <h2>Getting Started</h2>
-            <p>Ready to create your own robotics portfolio? Get started with MESGRO in just a few steps:</p>
-            
-            <ol class="getting-started-steps">
-                <li><strong>Fork the Repository:</strong> Start by forking the MESGRO repository to your GitHub account.</li>
-                <li><strong>Customize Your Content:</strong> Add your projects, update the configuration, and personalize the design.</li>
-                <li><strong>Enable GitHub Pages:</strong> Turn on GitHub Pages in your repository settings to publish your portfolio.</li>
-                <li><strong>Share Your Work:</strong> Your portfolio is now live and ready to share with the world!</li>
-            </ol>
-            
-            <div class="cta-buttons">
-                <a href="https://github.com/aojedao/MESGRO" class="btn-primary" target="_blank">
-                    <i class="fab fa-github"></i> Get Started on GitHub
+            <h2>Contact Me</h2>
+            <p>I'm always interested in connecting and discussing robotics, engineering, and new opportunities.</p>
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/akash-iyer/" class="btn-primary" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i> LinkedIn
                 </a>
-                <a href="{{ '/projects/' | relative_url }}" class="btn-secondary">
-                    <i class="fas fa-eye"></i> View Example Projects
+                <a href="mailto:akashiyer2022@gmail.com" class="btn-secondary">
+                    <i class="fas fa-envelope"></i> akashiyer2022@gmail.com
+                </a>
+                <a href="tel:+19086363197" class="btn-secondary">
+                    <i class="fas fa-phone"></i> 908-636-3197
                 </a>
             </div>
-        </section>
-
-        <section class="about-section">
-            <h2>Contributing</h2>
-            <p>MESGRO is an open-source project and we welcome contributions from the community. Whether you're fixing bugs, adding new features, or improving documentation, your help is appreciated.</p>
-            
-            <p>Check out our <a href="https://github.com/aojedao/MESGRO/blob/main/CONTRIBUTING.md" target="_blank">Contributing Guide</a> to get started.</p>
         </section>
 
     </div>
@@ -302,54 +273,24 @@ permalink: /about/
     line-height: var(--line-height-relaxed);
 }
 
-.tech-stack {
+.experience-extra.is-hidden {
+    display: none;
+}
+
+.experience-toggle-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--spacing-xl);
+}
+
+.experience-toggle {
+    font-family: inherit;
+}
+
+.contact-links {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--spacing-lg);
-    justify-content: center;
-    margin-top: var(--spacing-lg);
-}
-
-.tech-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--spacing-sm);
-    padding: var(--spacing-lg);
-    background-color: var(--surface-color);
-    border-radius: var(--radius-lg);
-    border: 1px solid var(--border-color);
-    min-width: 120px;
-}
-
-.tech-item i {
-    font-size: var(--font-size-2xl);
-    color: var(--accent-color);
-}
-
-.tech-item span {
-    font-weight: var(--font-weight-medium);
-    color: var(--text-primary);
-}
-
-.getting-started-steps {
-    background-color: var(--surface-color);
-    padding: var(--spacing-xl);
-    border-radius: var(--radius-lg);
-    border: 1px solid var(--border-color);
-    margin: var(--spacing-lg) 0;
-}
-
-.getting-started-steps li {
-    margin-bottom: var(--spacing-md);
-    line-height: var(--line-height-relaxed);
-}
-
-.cta-buttons {
-    display: flex;
     gap: var(--spacing-md);
-    justify-content: center;
-    flex-wrap: wrap;
     margin-top: var(--spacing-xl);
 }
 
@@ -377,13 +318,37 @@ permalink: /about/
         grid-template-columns: 1fr;
     }
     
-    .tech-stack {
-        justify-content: center;
-    }
-    
-    .cta-buttons {
+    .contact-links {
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
+    }
+
+    .contact-links a {
+        justify-content: center;
     }
 }
 </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const toggle = document.getElementById('experience-toggle');
+    const extraExperiences = document.querySelectorAll('.experience-extra');
+
+    if (!toggle || !extraExperiences.length) return;
+
+    toggle.addEventListener('click', function () {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        const nextExpanded = !expanded;
+
+        extraExperiences.forEach(function (card) {
+            card.classList.toggle('is-hidden', !nextExpanded);
+        });
+
+        toggle.setAttribute('aria-expanded', String(nextExpanded));
+        toggle.querySelector('span').textContent = nextExpanded ? 'Show Less' : 'Show More';
+        toggle.querySelector('i').className = nextExpanded
+            ? 'fas fa-chevron-up'
+            : 'fas fa-chevron-down';
+    });
+});
+</script>
