@@ -46,61 +46,70 @@ permalink: /about/
         </section>
 
         <section class="about-section">
-            <h2>Key Features</h2>
+            <h2>Education</h2>
             <div class="features-list">
                 <div class="feature-item">
-                    <h3><i class="fas fa-cube"></i> Interactive 3D Model Viewer</h3>
-                    <p>Display your mechanical designs, prototypes, and 3D printed parts with an interactive viewer that supports STL, OBJ, GLTF, and GLB formats. Users can rotate, zoom, and explore your designs in detail.</p>
+                    <h3><i class="fas fa-graduation-cap"></i> Georgia Institute of Technology</h3>
+                    <p class="feature-meta">M.S. in Robotics · Atlanta, GA</p>
+                    <p>August 2025 – May 2027 · GPA: 3.9/4.0</p>
                 </div>
-                
+
                 <div class="feature-item">
-                    <h3><i class="fas fa-microchip"></i> Circuit Schematic Display</h3>
-                    <p>Showcase your electrical designs with zoomable and pannable circuit diagrams. Perfect for displaying PCB layouts, wiring diagrams, and system architectures.</p>
-                </div>
-                
-                <div class="feature-item">
-                    <h3><i class="fas fa-code"></i> Code Integration</h3>
-                    <p>Present your source code with syntax highlighting, tabbed interfaces, and download links. Supports multiple programming languages including C/C++, Python, Arduino, and more.</p>
-                </div>
-                
-                <div class="feature-item">
-                    <h3><i class="fas fa-mobile-alt"></i> Responsive Design</h3>
-                    <p>Your portfolio looks great on all devices - from desktop computers to mobile phones. The responsive design ensures optimal viewing experience across all screen sizes.</p>
-                </div>
-                
-                <div class="feature-item">
-                    <h3><i class="fab fa-github"></i> GitHub Pages Compatible</h3>
-                    <p>Deploy your portfolio for free using GitHub Pages. The template is fully compatible with Jekyll and GitHub's hosting platform.</p>
-                </div>
-                
-                <div class="feature-item">
-                    <h3><i class="fas fa-palette"></i> Customizable Theme</h3>
-                    <p>Dark and light themes with easy customization options. Modify colors, fonts, and layouts to match your personal brand.</p>
+                    <h3><i class="fas fa-graduation-cap"></i> University of Maryland</h3>
+                    <p class="feature-meta">B.S. in Mechanical Engineering · College Park, MD</p>
+                    <p>August 2022 – May 2025 · GPA: 3.8/4.0</p>
                 </div>
             </div>
         </section>
 
         <section class="about-section">
-            <h2>Perfect For</h2>
-            <div class="perfect-for-grid">
-                <div class="perfect-for-item">
-                    <h4>Students</h4>
-                    <p>Showcase your coursework, capstone projects, and research work to potential employers and graduate schools.</p>
+            <h2>Experience</h2>
+            <div class="features-list">
+                <div class="feature-item">
+                    <h3><i class="fas fa-briefcase"></i> Mechanical Systems and Project Engineering Intern</h3>
+                    <p class="feature-meta">Boeing · Ridley Park, PA · May–August 2025 and May–August 2026</p>
+                    <ul class="feature-details">
+                        <li>Created CATIA CAD models of CH-47 transmission-system components to evaluate capability improvements.</li>
+                        <li>Helped test mechanical components and resolve issues with aircraft fuel systems.</li>
+                        <li>Prepared engineering change proposals to meet customer requirements and document engineering changes.</li>
+                    </ul>
                 </div>
-                
-                <div class="perfect-for-item">
-                    <h4>Engineers</h4>
-                    <p>Display your professional projects, innovations, and technical expertise to colleagues and industry peers.</p>
+
+                <div class="feature-item">
+                    <h3><i class="fas fa-chalkboard-teacher"></i> Mechanical Engineering Undergraduate Teaching Fellow</h3>
+                    <p class="feature-meta">University of Maryland · College Park, MD · August 2024–May 2025</p>
+                    <ul class="feature-details">
+                        <li>Prepared and conducted midterm and final exam reviews for ENME 382: Materials Engineering.</li>
+                        <li>Developed rubrics and graded assignments in coordination with other teaching fellows.</li>
+                        <li>Taught and assisted students with assignments and exam preparation during office hours.</li>
+                    </ul>
                 </div>
-                
-                <div class="perfect-for-item">
-                    <h4>Researchers</h4>
-                    <p>Present your research findings, prototypes, and experimental setups with rich media and detailed documentation.</p>
+
+                <div class="feature-item">
+                    <h3><i class="fas fa-flask"></i> Undergraduate Researcher</h3>
+                    <p class="feature-meta">University of Maryland · College Park, MD · January 2024–May 2025</p>
+                    <ul class="feature-details">
+                        <li>Developed and iterated on CAD models for a tuna-inspired autonomous underwater vehicle prototype.</li>
+                        <li>Manufactured and integrated components using 3D printing, casting, and manual methods.</li>
+                    </ul>
                 </div>
-                
-                <div class="perfect-for-item">
-                    <h4>Hobbyists</h4>
-                    <p>Share your maker projects, Arduino creations, and DIY robotics builds with the maker community.</p>
+
+                <div class="feature-item">
+                    <h3><i class="fas fa-cogs"></i> Applications Engineering Intern</h3>
+                    <p class="feature-meta">Henkel · Bridgewater, NJ · June–August 2024</p>
+                    <ul class="feature-details">
+                        <li>Evaluated manufacturing ideas to develop material formulations and production techniques.</li>
+                        <li>Planned and executed tests to ensure new formulations could be produced across Henkel's manufacturing network.</li>
+                    </ul>
+                </div>
+
+                <div class="feature-item">
+                    <h3><i class="fas fa-solar-panel"></i> Engineering Intern</h3>
+                    <p class="feature-meta">Gaia Energy Research Institute · Alexandria, VA · August 2023–June 2024</p>
+                    <ul class="feature-details">
+                        <li>Applied physics, thermodynamics, and renewable-energy principles to support design development.</li>
+                        <li>Developed computer models analyzing the physics, economics, and environmental impact of renewable energy.</li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -276,24 +285,21 @@ permalink: /about/
     font-size: var(--font-size-lg);
 }
 
-.perfect-for-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--spacing-lg);
-    margin-top: var(--spacing-lg);
-}
-
-.perfect-for-item {
-    text-align: center;
-    padding: var(--spacing-lg);
-    background-color: var(--surface-color);
-    border-radius: var(--radius-lg);
-    border: 1px solid var(--border-color);
-}
-
-.perfect-for-item h4 {
+.feature-meta {
     color: var(--primary-color);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-relaxed);
+}
+
+.feature-details {
+    margin: var(--spacing-md) 0 0;
+    padding-left: var(--spacing-lg);
+}
+
+.feature-details li {
     margin-bottom: var(--spacing-sm);
+    color: var(--text-secondary);
+    line-height: var(--line-height-relaxed);
 }
 
 .tech-stack {
@@ -368,10 +374,6 @@ permalink: /about/
     }
 
     .features-list {
-        grid-template-columns: 1fr;
-    }
-    
-    .perfect-for-grid {
         grid-template-columns: 1fr;
     }
     
