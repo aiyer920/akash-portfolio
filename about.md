@@ -42,7 +42,7 @@ permalink: /about/
 
             <p>Outside of engineering, I enjoy table tennis, soccer, and video games.</p>
 
-            <p> This portfolio highlights my projects, professional experiences, and education. Feel free to reach out, I'm always interested in connecting and discussing new ideas and opportunities.</p>
+            <p>catiThis portfolio highlights my projects, professional experiences, and education. Feel free to reach out, I'm always interested in connecting and discussing new ideas and opportunities.</p>
         </section>
 
         <section class="about-section">
