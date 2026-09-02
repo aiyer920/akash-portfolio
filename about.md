@@ -14,16 +14,16 @@ permalink: /about/
 
             <div class="resume-preview">
                 <object
-                    data="{{ '/assets/resume/Akash_Resume (1).pdf' | relative_url }}"
+                    data="{{ '/assets/resume/Akash-Iyer-Resume.pdf' | relative_url }}"
                     type="application/pdf"
                     title="Akash Iyer's resume"
                 >
                     <p>
                         Your browser cannot display the embedded résumé.
-                        <a href="{{ '/assets/resume/Akash_Resume (1).pdf' | relative_url }}" target="_blank">Open the PDF instead.</a>
+                        <a href="{{ '/assets/resume/Akash-Iyer-Resume.pdf' | relative_url }}" target="_blank">Open the PDF instead.</a>
                     </p>
                 </object>
-                <a class="resume-open-link" href="{{ '/assets/resume/Akash_Resume (1).pdf' | relative_url }}" target="_blank">
+                <a class="resume-open-link" href="{{ '/assets/resume/Akash-Iyer-Resume.pdf' | relative_url }}" target="_blank">
                     <i class="fas fa-file-pdf"></i> Open Résumé PDF
                 </a>
             </div>
