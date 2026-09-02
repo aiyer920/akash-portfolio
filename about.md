@@ -6,8 +6,8 @@ permalink: /about/
 
 <div class="hero-section" style="padding: 100px 0; background: var(--background-color); border-bottom: 1px solid var(--border-color); text-align: center;">
     <div class="container">
-        <h1 style="font-size: var(--font-size-3xl); letter-spacing: -0.02em; color: var(--text-primary);">About MESGRO</h1>
-        <p style="color: var(--text-secondary); opacity: 0.7; max-width: 600px; margin: 0 auto; font-weight: 300;">An open-source portfolio template designed specifically for robotics and mechatronics engineers to showcase their innovative projects.</p>
+        <h1 style="font-size: var(--font-size-3xl); letter-spacing: -0.02em; color: var(--text-primary);">About Me</h1>
+        <p style="color: var(--text-secondary); opacity: 0.7; max-width: 600px; margin: 0 auto; font-weight: 300;">I'm Akash Iyer, an aspiring robotics engineer with a keen interest in robot mechanics, design, control systems.</p>
     </div>
 </div>
 
@@ -15,10 +15,14 @@ permalink: /about/
     <div class="container">
         
         <section class="about-section">
-            <h2>What is MESGRO?</h2>
-            <p>MESGRO (Mechatronics Engineering Showcase Gallery for Robotics Operations) is a comprehensive Jekyll template that enables engineers, researchers, and students to create stunning portfolios for their robotics and mechatronics projects.</p>
+            <h2>My Background</h2>
+            <p>I'm an MS student in Robotics at the Georgia Institute of Technology, with a BS in mechanical engineering from the University of Maryland, College Park. </p>
             
-            <p>Built with modern web technologies and designed with user experience in mind, MESGRO provides everything you need to showcase your technical projects professionally and effectively.</p>
+            <p>Through research, internships, and coursework I've developed a passion for robotics and engineering. These experiences have given me exposure to mechanical design, manufacturing, control systems, and deep learning. My robotics work includes quadrupedal robots, humanoids, underwater robots, and many mechatronic devices. </p>
+
+            <p>Beyond my work and education, I enjoy table tennis, soccer, and videogames</p>
+
+            <p>This portfolio highlights my projects, experiences, and education. Don't hesitate to reach out, I'm always interested in connecting!</p>
         </section>
 
         <section class="about-section">
