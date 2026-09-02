@@ -4,10 +4,30 @@ title: About
 permalink: /about/
 ---
 
-<div class="hero-section" style="padding: 100px 0; background: var(--background-color); border-bottom: 1px solid var(--border-color); text-align: center;">
+<div class="hero-section about-hero">
     <div class="container">
-        <h1 style="font-size: var(--font-size-3xl); letter-spacing: -0.02em; color: var(--text-primary);">About Me</h1>
-        <p style="color: var(--text-secondary); opacity: 0.7; max-width: 600px; margin: 0 auto; font-weight: 300;">I'm Akash Iyer, an aspiring robotics engineer with a keen interest in robot mechanics, design, control systems.</p>
+        <div class="about-hero-grid">
+            <div class="about-hero-intro">
+                <h1>About Me</h1>
+                <p>I'm Akash Iyer, an aspiring robotics engineer with a keen interest in robot mechanics, design, control systems.</p>
+            </div>
+
+            <div class="resume-preview">
+                <object
+                    data="{{ '/assets/resume/Akash_Resume (1).pdf' | relative_url }}"
+                    type="application/pdf"
+                    title="Akash Iyer's resume"
+                >
+                    <p>
+                        Your browser cannot display the embedded résumé.
+                        <a href="{{ '/assets/resume/Akash_Resume (1).pdf' | relative_url }}" target="_blank">Open the PDF instead.</a>
+                    </p>
+                </object>
+                <a class="resume-open-link" href="{{ '/assets/resume/Akash_Resume (1).pdf' | relative_url }}" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Open Résumé PDF
+                </a>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -16,13 +36,13 @@ permalink: /about/
         
         <section class="about-section">
             <h2>My Background</h2>
-            <p>I'm an MS student in Robotics at the Georgia Institute of Technology, with a BS in mechanical engineering from the University of Maryland, College Park. </p>
+            <p>I'm an M.S. student in Robotics at the Georgia Institute of Technology, with a B.S. in Mechanical Engineering from the University of Maryland, College Park. </p>
             
-            <p>Through research, internships, and coursework I've developed a passion for robotics and engineering. These experiences have given me exposure to mechanical design, manufacturing, control systems, and deep learning. My robotics work includes quadrupedal robots, humanoids, underwater robots, and many mechatronic devices. </p>
+            <p>Through research, internships, and coursework, I've developed a passion for robotics and engineering while building experience across mechanical design, manufacturing, control systems, and deep learning. My robotics work has spanned quadrupedal and humanoid robots, underwater robotics, and a variety of mechatronic systems. </p>
 
-            <p>Beyond my work and education, I enjoy table tennis, soccer, and videogames</p>
+            <p>Outside of engineering, I enjoy table tennis, soccer, and video games.</p>
 
-            <p>This portfolio highlights my projects, experiences, and education. Don't hesitate to reach out, I'm always interested in connecting!</p>
+            <pThis portfolio highlights my projects, professional experiences, and education. Feel free to reach out, I'm always interested in connecting and discussing new ideas and opportunities.</p>
         </section>
 
         <section class="about-section">
@@ -147,6 +167,64 @@ permalink: /about/
 </div>
 
 <style>
+.about-hero {
+    padding: var(--spacing-3xl) 0;
+    background: var(--background-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.about-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(440px, 1.2fr);
+    align-items: center;
+    gap: var(--spacing-3xl);
+}
+
+.about-hero-intro h1 {
+    color: var(--text-primary);
+    font-size: var(--font-size-3xl);
+    letter-spacing: -0.02em;
+}
+
+.about-hero-intro p {
+    max-width: 600px;
+    color: var(--text-secondary);
+    font-weight: 300;
+    line-height: var(--line-height-relaxed);
+    opacity: 0.7;
+}
+
+.resume-preview {
+    overflow: hidden;
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 12px 30px var(--shadow-color);
+}
+
+.resume-preview object {
+    display: block;
+    width: 100%;
+    height: 680px;
+    border: 0;
+}
+
+.resume-open-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+    color: var(--primary-color);
+    border-top: 1px solid var(--border-color);
+    font-weight: var(--font-weight-medium);
+    text-decoration: none;
+}
+
+.resume-open-link:hover {
+    color: var(--accent-color);
+}
+
 .about-content {
     padding: var(--spacing-2xl) 0;
 }
@@ -269,7 +347,26 @@ permalink: /about/
     margin-top: var(--spacing-xl);
 }
 
+@media (max-width: 900px) {
+    .about-hero-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+
+    .resume-preview object {
+        height: 620px;
+    }
+}
+
 @media (max-width: 640px) {
+    .about-hero {
+        padding: var(--spacing-2xl) 0;
+    }
+
+    .resume-preview object {
+        height: 520px;
+    }
+
     .features-list {
         grid-template-columns: 1fr;
     }
