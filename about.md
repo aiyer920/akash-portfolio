@@ -51,13 +51,13 @@ permalink: /about/
                 <div class="feature-item">
                     <h3><i class="fas fa-graduation-cap"></i> Georgia Institute of Technology</h3>
                     <p class="feature-meta">M.S. in Robotics · Atlanta, GA</p>
-                    <p>August 2025 – May 2027 · GPA: 3.9/4.0</p>
+                    <p>August 2025 – May 2027</p>
                 </div>
 
                 <div class="feature-item">
                     <h3><i class="fas fa-graduation-cap"></i> University of Maryland</h3>
                     <p class="feature-meta">B.S. in Mechanical Engineering · College Park, MD</p>
-                    <p>August 2022 – May 2025 · GPA: 3.8/4.0</p>
+                    <p>August 2022 – May 2025</p>
                 </div>
             </div>
         </section>
