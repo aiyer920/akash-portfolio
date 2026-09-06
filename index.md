@@ -121,37 +121,60 @@ layout: default
         <div class="skill-category">
           <h3><i class="fas fa-robot"></i> Robotics</h3>
           <div class="skill-tags">
-            <span class="skill-tag">ROS</span>
+            <span class="skill-tag">ROS 1</span>
+            <span class="skill-tag">ROS 2</span>
+            <span class="skill-tag">Gazebo</span>
             <span class="skill-tag">Kinematics</span>
             <span class="skill-tag">Path Planning</span>
             <span class="skill-tag">SLAM</span>
           </div>
         </div>
         <div class="skill-category">
-          <h3><i class="fas fa-microchip"></i> Electronics</h3>
+          <h3><i class="fas fa-microchip"></i> Electronics &amp; Embedded Systems</h3>
           <div class="skill-tags">
+            <span class="skill-tag">Raspberry Pi</span>
             <span class="skill-tag">Arduino</span>
-            <span class="skill-tag">ESP32</span>
-            <span class="skill-tag">PCB Design</span>
             <span class="skill-tag">Sensors</span>
           </div>
         </div>
         <div class="skill-category">
-          <h3><i class="fas fa-code"></i> Programming</h3>
+          <h3><i class="fas fa-code"></i> Programming &amp; Tools</h3>
           <div class="skill-tags">
             <span class="skill-tag">Python</span>
-            <span class="skill-tag">C/C++</span>
+            <span class="skill-tag">C++</span>
             <span class="skill-tag">MATLAB</span>
-            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Teamcenter IPDM</span>
           </div>
         </div>
         <div class="skill-category">
-          <h3><i class="fas fa-cube"></i> CAD/Design</h3>
+          <h3><i class="fas fa-cube"></i> CAD &amp; Design</h3>
           <div class="skill-tags">
             <span class="skill-tag">SolidWorks</span>
             <span class="skill-tag">Fusion 360</span>
+            <span class="skill-tag">Autodesk Inventor</span>
+            <span class="skill-tag">CATIA</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-tools"></i> Manufacturing</h3>
+          <div class="skill-tags">
             <span class="skill-tag">3D Printing</span>
-            <span class="skill-tag">KiCad</span>
+            <span class="skill-tag">Waterjet</span>
+            <span class="skill-tag">CNC</span>
+            <span class="skill-tag">Laser Cutting</span>
+            <span class="skill-tag">Milling</span>
+            <span class="skill-tag">Manual Machining</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-brain"></i> AI &amp; Perception</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">Computer Vision</span>
+            <span class="skill-tag">LiDAR</span>
+            <span class="skill-tag">Deep Learning</span>
           </div>
         </div>
       </div>
