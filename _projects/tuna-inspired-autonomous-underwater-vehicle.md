@@ -6,6 +6,12 @@ date: 2026-09-14
 categories: [Robotics, 3D Printing, Solidworks, Casting]
 featured_image: "/assets/images/projects/bio-inspired-uav/UAV Assembly.png"
 
+models:
+  - file: "/assets/models/bio-inspired-auv/body.glb"
+    description: "Main body of the tuna-inspired autonomous underwater vehicle"
+  - file: "/assets/models/bio-inspired-auv/tail-connector.glb"
+    description: "Tail connector for the tuna-inspired autonomous underwater vehicle"
+
 gallery:
   - type: "image"
     file: "/assets/images/projects/bio-inspired-uav/UAV Assembly.png"
