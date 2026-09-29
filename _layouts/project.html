@@ -139,7 +139,26 @@ layout: default
             <!-- Right Column: Media -->
             <div class="project-right-panel">
 
-
+                <!-- Featured Video -->
+                {% if page.featured_video %}
+                <section class="project-media-group" id="featured-video">
+                    <div class="media-item">
+                        <div class="gallery-video-embed">
+                            <iframe
+                                src="https://www.youtube-nocookie.com/embed/{{ page.featured_video.youtube_id }}"
+                                title="{{ page.featured_video.description | default: page.title }}"
+                                loading="lazy"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        {% if page.featured_video.description %}
+                        <p class="media-caption">{{ page.featured_video.description }}</p>
+                        {% endif %}
+                    </div>
+                </section>
+                {% endif %}
 
                 <!-- 3D Models Section -->
                 {% if page.models %}

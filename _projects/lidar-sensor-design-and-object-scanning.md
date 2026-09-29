@@ -10,6 +10,27 @@ models:
   - file: "/assets/models/lidar/sensor-holder.glb"
     description: "Custom LiDAR sensor holder"
 
+featured_video:
+  youtube_id: "yVAGEmn95Cs"
+  description: "LiDAR sensor design and object scanning demonstration"
+
+components:
+  - name: "Raspberry Pi"
+    quantity: 1
+    description: "Main computer for image capture and sensor data processing"
+
+  - name: "Raspberry Pi Camera"
+    quantity: 1
+    description: "Captures the projected laser line for triangulation"
+
+  - name: "Line Laser"
+    quantity: 1
+    description: "Projects the reference line used to calculate range"
+
+  - name: "3D-Printed Sensor Holder"
+    quantity: 1
+    description: "Custom mount that maintains the camera and laser geometry"
+
 gallery:
   - type: "image"
     file: "/assets/images/projects/lidar/sensor.png"
@@ -17,9 +38,6 @@ gallery:
   - type: "image"
     file: "/assets/images/projects/lidar/pointcloudfinal.png"
     description: "Point cloud generated from the campus structure scan"
-  - type: "youtube"
-    youtube_id: "yVAGEmn95Cs"
-    description: "LiDAR sensor design and object scanning demonstration"
 ---
 
 ## Overview
@@ -37,9 +55,3 @@ gallery:
 ## Data Collection and Processing
 
 <!-- Add details about data collection and point-cloud processing here. -->
-
-## Components and Materials
-
-| Component or Material | Quantity |
-|-----------------------|----------|
-<!-- Add component rows using: | Component name | Quantity | -->
