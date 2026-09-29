@@ -27,8 +27,7 @@ This tuna inspired autonomous underwater vehicle (AUV) is a prototype for a test
 
 ## Key Features
 
-<!-- Add the project's key features here. -->
-
+The main components of the tuna inspired AUV are the body pieces, tail connector, silicone tail, and cover. I was involved in the design and modification of these parts and responsible for their manufacturing. The body pieces include the front piece, which is attached to a pipe to keep the AUV stable, and the main body piece, which holds electronics and is connected to the tail. The tail connector attaches to the silicone tail, which is moved back and forth using a servo motor and also attaches to the caudal fin. The exterior of all these parts follows the same form of a fish. 
 ## Design
 
 I designed the connector pieces for the AUV's silicone tail as well as making modifications to all the body pieces. In addition, I designed the mold for the silicone tail. These designs were all performed in CAD using Solidworks. For the tail connector piece, I needed to design a piece that fit the form of the fish shaped body and the silicone tail and attached externally to keep the interior waterproof. Modifications to the body pieces included improving the waterproofing of the design, adding mounting surfaces for internal parts and redesigning how the body pieces are connected. Designing these parts made me consider how to integrate these components into the existing assembly smoothly and keep the AUV waterproof while keeping these parts easily removable so different caudal fins could be swapped out for testing. I also added internal body features like a pipe holder which would be used to keep the body stable during testing.  
