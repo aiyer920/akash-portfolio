@@ -42,11 +42,11 @@ gallery:
 
 ## Overview
 
-<!-- Add the project overview here. -->
+I designed a custom LiDAR sensor and mount and developed a data processing pipeline for my final project in my remote sensing class. I used my sensor to scan and collect data on a structure on campus, in this project a large composting bin and then reconstructed a point cloud representation of this structure. This project involved the design and manufacturing of the physical sensor, developing the code for the data processing system and then calibrating the sensor, collecting data, and fine tuning the resulting point cloud. I gained valuable experience in sensor design, working with a Raspberry Pi and Arduino, and computer vision. 
 
 ## Key Features
 
-<!-- Add the project's key features here. -->
+This project included the physical lidar sensor and mount, data collection of a compositing bin on campus, and data processing pipeline to transform collected measurements into a pointcloud representing the structure. 
 
 ## Design and Manufacturing
 
