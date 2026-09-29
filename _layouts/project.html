@@ -165,6 +165,18 @@ layout: default
                     <div class="media-gallery-stack">
                         {% for media in page.gallery %}
                         <div class="media-item">
+                            {% if media.type == 'youtube' %}
+                            <div class="gallery-video-embed">
+                                <iframe
+                                    src="https://www.youtube-nocookie.com/embed/{{ media.youtube_id }}"
+                                    title="{{ media.description | default: page.title }}"
+                                    loading="lazy"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            {% else %}
                             {% assign file_extension = media.file | split: '.' | last | downcase %}
                             {% if file_extension == 'mp4' or file_extension == 'webm' or file_extension == 'avi' %}
                             <video controls class="gallery-video">
@@ -174,6 +186,7 @@ layout: default
                             {% else %}
                             <img src="{{ media.file | relative_url }}"
                                 alt="{{ media.description | default: page.title }}" class="gallery-image" data-zoomable>
+                            {% endif %}
                             {% endif %}
                             {% if media.description %}
                             <p class="media-caption">{{ media.description }}</p>
