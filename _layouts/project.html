@@ -54,6 +54,10 @@ layout: default
                         <summary>Code Files</summary>
                         <div class="code-list-container">
                             {% for code_file in page.code_files %}
+                            {% assign code_download_url = code_file.download_url %}
+                            {% if code_file.download_path %}
+                            {% assign code_download_url = code_file.download_path | relative_url %}
+                            {% endif %}
                             <div class="code-file-wrapper">
                                 {% if code_file.content %}
                                 <details class="code-file-details">
@@ -61,8 +65,8 @@ layout: default
                                         <span class="file-name"><i class="fas fa-code"></i> {{ code_file.name }}</span>
                                         <div class="file-meta">
                                             <span class="lang-tag">{{ code_file.language }}</span>
-                                            {% if code_file.download_url %}
-                                            <a href="{{ code_file.download_url }}" class="file-download-icon" download
+                                            {% if code_download_url %}
+                                            <a href="{{ code_download_url }}" class="file-download-icon" download
                                                 title="Download"><i class="fas fa-download"></i></a>
                                             {% endif %}
                                         </div>
@@ -74,8 +78,8 @@ layout: default
                                 {% else %}
                                 <div class="code-file-item">
                                     <i class="fas fa-code"></i> {{ code_file.name }}
-                                    {% if code_file.download_url %}
-                                    <a href="{{ code_file.download_url }}" download><i class="fas fa-download"></i></a>
+                                    {% if code_download_url %}
+                                    <a href="{{ code_download_url }}" download><i class="fas fa-download"></i></a>
                                     {% endif %}
                                 </div>
                                 {% endif %}
