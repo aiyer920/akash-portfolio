@@ -945,6 +945,10 @@ pre[class*="language-"] {
   gap: var(--spacing-sm);
 }
 
+.project-actions-below-content {
+  justify-content: center;
+}
+
 .btn-small {
   display: inline-flex;
   align-items: center;

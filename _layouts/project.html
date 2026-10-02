@@ -9,10 +9,12 @@ layout: default
             <p class="project-description">{{ page.description }}</p>
 
             <div class="project-meta">
-                {% if page.github_url and page.github_below_content != true %}
-                <a href="{{ page.github_url }}" class="btn-github" target="_blank">
-                    <i class="fab fa-github"></i> View on GitHub
+                {% if page.github_url %}
+                {% if page.github_in_banner or page.github_below_content != true %}
+                <a href="{{ page.github_url }}" class="btn-github" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github" aria-hidden="true"></i> {{ page.github_label | default: 'View on GitHub' }}
                 </a>
+                {% endif %}
                 {% endif %}
 
                 {% if page.demo_url %}
@@ -46,7 +48,7 @@ layout: default
                 </section>
 
                 {% if page.github_url and page.github_below_content %}
-                <div class="project-actions-small">
+                <div class="project-actions-small project-actions-below-content">
                     <a href="{{ page.github_url }}" class="btn-small" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-github" aria-hidden="true"></i> {{ page.github_label | default: 'GitHub' }}
                     </a>

@@ -6,7 +6,8 @@ date: 2026-10-02
 categories: [Reinforcement Learning, PyTorch, Python]
 featured_image: "/assets/images/projects/soccer-bot/featured.jpg"
 github_url: "https://github.com/aiyer920/soccertwos_finalproject"
-github_in_content: true
+github_below_content: true
+github_label: "Soccertwos Project GitHub"
 
 gallery:
   - type: "video"
@@ -32,5 +33,3 @@ gallery:
 ## Training and Evaluation
 
 <!-- Add details about the curriculum, training, and evaluation here. -->
-
-<a href="{{ page.github_url }}" class="btn-small" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> Soccertwos Project GitHub</a>
