@@ -9,7 +9,7 @@ layout: default
             <p class="project-description">{{ page.description }}</p>
 
             <div class="project-meta">
-                {% if page.github_url %}
+                {% if page.github_url and page.github_in_content != true %}
                 <a href="{{ page.github_url }}" class="btn-github" target="_blank">
                     <i class="fab fa-github"></i> View on GitHub
                 </a>
@@ -118,7 +118,7 @@ layout: default
                 <div class="project-meta-bottom">
 
                     <div class="project-actions-small">
-                        {% if page.github_url %}
+                        {% if page.github_url and page.github_in_content != true %}
                         <a href="{{ page.github_url }}" class="btn-small" target="_blank">
                             <i class="fab fa-github"></i> GitHub
                         </a>

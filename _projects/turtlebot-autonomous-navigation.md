@@ -6,6 +6,7 @@ date: 2026-10-02
 categories: [ROS 2, Kinematics, Path Planning, SLAM, Sensors, Computer Vision]
 featured_image: "/assets/images/projects/turtlebot/featured.jpg"
 github_url: "https://github.com/aiyer920/final"
+github_in_content: true
 
 gallery:
   - type: "video"
@@ -16,7 +17,7 @@ gallery:
     description: "Turtlebot lab demonstration (3x speed)"
   - type: "image"
     file: "/assets/images/projects/turtlebot/featured.jpg"
-    description: "Turtlebot navigating the maze"
+    description: "Turtlebot navigating around obstacles in the lab"
 ---
 
 ## Overview
@@ -38,3 +39,5 @@ gallery:
 ## Control
 
 <!-- Add details about the control algorithms here. -->
+
+<a href="{{ page.github_url }}" class="btn-small" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> Turtlebot Project Github</a>
