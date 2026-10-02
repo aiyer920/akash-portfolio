@@ -175,6 +175,7 @@ layout: default
             <span class="skill-tag">Computer Vision</span>
             <span class="skill-tag">LiDAR</span>
             <span class="skill-tag">Deep Learning</span>
+            <span class="skill-tag">Reinforcement Learning</span>
           </div>
         </div>
       </div>
