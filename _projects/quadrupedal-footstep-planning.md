@@ -2,6 +2,9 @@
 layout: project
 title: "Graph Search and Trajectory Optimization for Quadrupedal Footstep Planning"
 description: "This project will expand on the QuadPIPs planning architecture and investigate faster planning approaches such as receding horizon and investigate methods to evaluate dynamic feasibility."
+overview_citation:
+  url: "https://quadpips.github.io/"
+  title: "QuadPiPS: A Perception-informed Footstep Planner for Quadrupeds With Semantic Affordance Prediction"
 date: 2026-10-06
 categories: [ROS, Gazebo, Kinematics, Path Planning, C++, Linux]
 featured_image: "/assets/images/projects/quadpips/Go2.png"
@@ -19,11 +22,7 @@ gallery:
     description: "Quadruped perception visualization"
 ---
 
-## Overview
-
-This project builds on [QuadPiPS: A Perception-informed Footstep Planner for Quadrupeds With Semantic Affordance Prediction](https://quadpips.github.io/), which combines graph search over candidate footholds with trajectory optimization for quadrupedal locomotion.
-
-<!-- Add the project overview here. -->
+<!-- Add any additional overview text here; the layout displays the description and citation above. -->
 
 ## Key Features
 

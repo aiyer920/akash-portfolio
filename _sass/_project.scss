@@ -500,8 +500,8 @@
 }
 
 .gallery-video.gallery-video-tall {
-  height: auto;
-  aspect-ratio: 16 / 9;
+  height: clamp(320px, 40vw, 520px);
+  aspect-ratio: auto;
   max-height: none;
   object-fit: contain;
   background-color: #000;
