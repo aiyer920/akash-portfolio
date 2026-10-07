@@ -13,12 +13,15 @@ gallery:
   - type: "video"
     file: "/assets/images/projects/quadpips/Screencast 2026-02-28 13_49_54.mp4"
     description: "QuadPIPs demonstration"
+    tall: true
   - type: "image"
     file: "/assets/images/projects/quadpips/perception.png"
     description: "Quadruped perception visualization"
 ---
 
 ## Overview
+
+This project builds on [QuadPiPS: A Perception-informed Footstep Planner for Quadrupeds With Semantic Affordance Prediction](https://quadpips.github.io/), which combines graph search over candidate footholds with trajectory optimization for quadrupedal locomotion.
 
 <!-- Add the project overview here. -->
 

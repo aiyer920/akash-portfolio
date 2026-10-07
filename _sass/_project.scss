@@ -499,6 +499,14 @@
   display: block;
 }
 
+.gallery-video.gallery-video-tall {
+  height: auto;
+  aspect-ratio: 16 / 9;
+  max-height: none;
+  object-fit: contain;
+  background-color: #000;
+}
+
 .gallery-video-embed {
   width: 100%;
   aspect-ratio: 16 / 9;

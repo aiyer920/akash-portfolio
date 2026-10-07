@@ -211,7 +211,7 @@ layout: default
                             {% else %}
                             {% assign file_extension = media.file | split: '.' | last | downcase %}
                             {% if file_extension == 'mp4' or file_extension == 'webm' or file_extension == 'avi' %}
-                            <video controls class="gallery-video">
+                            <video controls class="gallery-video{% if media.tall %} gallery-video-tall{% endif %}">
                                 <source src="{{ media.file | relative_url }}" type="video/{{ file_extension }}">
                                 Your browser does not support the video tag.
                             </video>
