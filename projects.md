@@ -26,7 +26,7 @@ permalink: /projects/
         <div class="projects-grid" id="projects-grid">
             {% for project in site.projects %}
             <article class="project-card" 
-                     data-categories="{% for cat in project.categories %}{{ cat | slugify }} {% endfor %}">
+                     data-categories="{% for cat in project.filter_categories %}{{ cat | slugify }} {% endfor %}">
                 
                 <!-- Project Image/Preview -->
                 <div class="project-preview">
@@ -103,13 +103,6 @@ permalink: /projects/
                     </div>
                     
                     <div class="project-meta">
-                        {% if project.date %}
-                            <span class="project-date">
-                                <i class="fas fa-calendar"></i>
-                                {{ project.date | date: "%B %Y" }}
-                            </span>
-                        {% endif %}
-                        
                         {% if project.github_url %}
                             <a href="{{ project.github_url }}" class="github-link" target="_blank">
                                 <i class="fab fa-github"></i>
@@ -156,7 +149,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (filter === 'all') {
                     card.style.display = 'block';
                 } else {
-                    const categories = card.getAttribute('data-categories');
+                    const categories = card.getAttribute('data-categories').trim().split(/\s+/);
                     if (categories.includes(filter)) {
                         card.style.display = 'block';
                     } else {

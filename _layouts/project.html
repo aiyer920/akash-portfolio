@@ -291,7 +291,7 @@ layout: default
 <!-- Project Navigation -->
 <div class="project-navigation">
     <div class="container">
-        {% assign project_array = site.projects | sort: 'date' %}
+        {% assign project_array = site.projects | sort: 'title' %}
         {% for project in project_array %}
         {% if project.url == page.url %}
         {% assign current_index = forloop.index %}

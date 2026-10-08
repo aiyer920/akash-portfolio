@@ -1,12 +1,12 @@
 ---
 layout: project
 title: "Graph Search and Trajectory Optimization for Quadrupedal Footstep Planning"
-description: "This project will expand on the QuadPIPs planning architecture and investigate faster planning approaches such as receding horizon and investigate methods to evaluate dynamic feasibility."
+description: "This project will expand on the QuadPiPS planning architecture by investigating faster planning approaches, such as receding-horizon planning, and methods to evaluate dynamic feasibility."
 overview_citation:
   url: "https://quadpips.github.io/"
   title: "QuadPiPS: A Perception-informed Footstep Planner for Quadrupeds With Semantic Affordance Prediction"
-date: 2026-10-06
 categories: [ROS, Gazebo, Kinematics, Path Planning, C++, Linux]
+filter_categories: [Robotics]
 featured_image: "/assets/images/projects/quadpips/Go2.png"
 
 gallery:
@@ -15,19 +15,19 @@ gallery:
     description: "The real Go2 quadruped"
   - type: "video"
     file: "/assets/images/projects/quadpips/Screencast 2026-02-28 13_49_54.mp4"
-    description: "QuadPIPs demonstration"
+    description: "QuadPiPS demonstration"
     tall: true
   - type: "image"
     file: "/assets/images/projects/quadpips/perception.png"
     description: "Quadruped perception visualization"
 ---
 
-## Overview 
-This project focuses on two aspects of the QuadPIPs footstep planner. One focus is exploring approaches to increasing the planning/replanning speed of the QuadPIPs footstep planner to provide real time performance. Another focus is implementing methods to evaluate dynamic feasibility in the graph search. These methods are implemented in a simulation environment and tested on a real quadrupedal robot. This project gives opportunities to investigate robot motion planning, kinematics, dynamics, and environment representation. We expect to develop comparisons of various search and dynamics evaluation methods, as well as implementations of these algorithms.
+## Overview
+This project focuses on two aspects of the QuadPiPS footstep planner. One focus is exploring approaches to increasing the planning/replanning speed of the QuadPiPS footstep planner to provide real-time performance. Another focus is implementing methods to evaluate dynamic feasibility in the graph search. These methods are implemented in a simulation environment and tested on a real quadrupedal robot. This project gives opportunities to investigate robot motion planning, kinematics, dynamics, and environment representation. We expect to develop comparisons of various search and dynamics evaluation methods, as well as implementations of these algorithms.
 
 ## Key Features
 
-This project revolves around improving planning speed for the QuadPips footstep planner, including Weighted A*, anytime search, Multi-Heuristic A*, and receding-horizon approaches, to evaluate their impact on planning latency and path quality. It also investifates checks that identify difficult or unstable foothold transitions before they reach trajectory optimization, combining kinematic reasoning with candidate dynamic-feasibility methods. Planned simulation comparisons cover stairs, stepping stones, and open maps, measuring search effort, trajectory-optimization success, and the robot's ability to reach its goal. The most promising search and feasibility methods will be combined and evaluated on the Unitree Go2 after simulation screening, with attention to replanning stability and failure modes.
+This project revolves around improving planning speed for the QuadPiPS footstep planner, including Weighted A*, anytime search, Multi-Heuristic A*, and receding-horizon approaches, to evaluate their impact on planning latency and path quality. It also investigates checks that identify difficult or unstable foothold transitions before they reach trajectory optimization, combining kinematic reasoning with candidate dynamic-feasibility methods. Planned simulation comparisons cover stairs, stepping stones, and open maps, measuring search effort, trajectory-optimization success, and the robot's ability to reach its goal. The most promising search and feasibility methods will be combined and evaluated on the Unitree Go2 after simulation screening, with attention to replanning stability and failure modes.
 
 ## Planning Speed
 

@@ -32,8 +32,8 @@ layout: default
     </div>
     
     <div class="projects-grid-featured">
-      {% assign featured_projects = site.projects | where: "featured", true | sort: "date" | reverse %}
-      {% assign all_projects = site.projects | sort: "date" | reverse %}
+      {% assign featured_projects = site.projects | where: "featured", true | sort: "title" %}
+      {% assign all_projects = site.projects | sort: "title" %}
       {% assign combined_projects = featured_projects | concat: all_projects %}
       {% assign unique_projects = combined_projects | uniq %}
       {% for project in unique_projects limit: 9 %}
