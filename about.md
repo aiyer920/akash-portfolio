@@ -127,7 +127,7 @@ permalink: /about/
             </div>
         </section>
 
-        <section class="about-section">
+        <section class="about-section" id="contact">
             <h2>Contact Me</h2>
             <p>I'm always interested in connecting and discussing robotics, engineering, and new opportunities.</p>
             <div class="contact-links">
@@ -207,6 +207,10 @@ permalink: /about/
 
 .about-content {
     padding: var(--spacing-2xl) 0;
+}
+
+#contact {
+    scroll-margin-top: calc(var(--header-height) + 24px);
 }
 
 .about-section {

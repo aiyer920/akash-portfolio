@@ -15,7 +15,7 @@ layout: default
           <a href="{{ '/about/' | relative_url }}" class="btn-secondary">
             About
           </a>
-           <a href="mailto:{{ site.email }}" class="btn-secondary">
+           <a href="{{ '/about/' | relative_url }}#contact" class="btn-secondary">
             Contact
           </a>
         </div>
